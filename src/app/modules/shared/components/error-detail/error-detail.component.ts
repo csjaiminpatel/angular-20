@@ -1,13 +1,13 @@
 import { Component, Input, OnDestroy, OnInit } from '@angular/core';
 import { ApiError } from '../../models/api-response';
 import { CommonService } from '../../services/common.service';
-import { CommonModule } from '@angular/common';
+
 import { NgbAlert } from '@ng-bootstrap/ng-bootstrap';
 import { SvgIconDirective } from '../../directives/svg-icon.directive';
 
 @Component({
     selector: 'app-error-detail',
-    imports: [CommonModule, NgbAlert, SvgIconDirective],
+    imports: [NgbAlert, SvgIconDirective],
     templateUrl: './error-detail.component.html',
     styleUrl: './error-detail.component.scss'
 })
