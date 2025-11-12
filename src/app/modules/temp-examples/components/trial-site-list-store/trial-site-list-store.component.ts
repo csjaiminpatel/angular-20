@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
 import { TranslateModule } from '@ngx-translate/core';
-import { LoadingComponent } from '../../../shared/components/loading/loading.component';
 import { FormsModule } from '@angular/forms';
 import { NgbPaginationModule, NgbTooltip } from '@ng-bootstrap/ng-bootstrap';
 import { SvgIconDirective } from '../../../shared/directives/svg-icon.directive';
@@ -15,7 +14,7 @@ import { instanceToInstance } from 'class-transformer';
 
 @Component({
     selector: 'app-trial-site-list-store',
-    imports: [TranslateModule, LoadingComponent, FormsModule, NgbPaginationModule, NgbTooltip, SvgIconDirective, ColumnSorterStoreComponent],
+    imports: [TranslateModule, FormsModule, NgbPaginationModule, NgbTooltip, SvgIconDirective, ColumnSorterStoreComponent],
     templateUrl: './trial-site-list-store.component.html',
     styleUrl: './trial-site-list-store.component.scss'
 })

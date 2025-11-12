@@ -2,7 +2,7 @@ import { ApplicationConfig, importProvidersFrom } from '@angular/core';
 import { provideRouter, withPreloading } from '@angular/router';
 import { HTTP_INTERCEPTORS, provideHttpClient, withFetch, withInterceptorsFromDi } from '@angular/common/http';
 import { routes } from './app.routes';
-import { provideAnimations } from '@angular/platform-browser/animations';
+import { provideAnimations } from'@angular/platform-browser/animations';
 import { PreloadingStrategyService } from './services/preloading-strategy.service';
 import { httpInterceptors } from './models/application-configurations/http-interceptor';
 import { translateModule } from './models/application-configurations/ngx-translate-config';

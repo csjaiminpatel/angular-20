@@ -7,13 +7,12 @@ import { ApiError, ApiOkResponse } from '../../../shared/models/api-response';
 import { AccountService } from '../../services/account.service';
 import { environment } from '../../../../../environments/environment';
 import { TranslateModule } from '@ngx-translate/core';
-import { SvgIconDirective } from '../../../shared/directives/svg-icon.directive';
 import { NgxCaptchaModule } from 'ngx-captcha';
 import { CommonModule } from '@angular/common';
 
 @Component({
     selector: 'app-forgot-password',
-    imports: [ReactiveFormsModule, RouterLink, TranslateModule, SvgIconDirective, NgxCaptchaModule, CommonModule],
+    imports: [ReactiveFormsModule, RouterLink, TranslateModule, NgxCaptchaModule, CommonModule],
     templateUrl: './forgot-password.component.html',
     styleUrl: './forgot-password.component.scss'
 })
