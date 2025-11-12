@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "ng18-template": {
+    "ng20-template": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular/build:application",
           "options": {
-            "outputPath": "dist/ng18-template",
+            "outputPath": "dist/ng20-template",
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": [
@@ -74,10 +74,10 @@
           "builder": "@angular/build:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "ng18-template:build:production"
+              "buildTarget": "ng20-template:build:production"
             },
             "development": {
-              "buildTarget": "ng18-template:build:development"
+              "buildTarget": "ng20-template:build:development"
             }
           },
           "defaultConfiguration": "development"

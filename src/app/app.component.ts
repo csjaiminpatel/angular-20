@@ -10,7 +10,7 @@ import { AppTranslateService } from './modules/shared/services/app-translate.ser
     styleUrl: './app.component.scss'
 })
 export class AppComponent {
-  title = 'ng18-template';
+  title = 'ng20-template';
 
   constructor(public translate: AppTranslateService){}
     
