@@ -5,7 +5,6 @@ import { UserPermissionService } from './user-permission.service';
 import { Observable, map } from 'rxjs';
 import { ApiCreatedResponse, ApiError, ApiOkResponse } from '../models/api-response';
 import { CommonService } from './common.service';
-import { IndividualConfig } from 'ngx-toastr';
 import { DataQueryResult } from '../models/data-query-helper';
 import { environment } from '../../../../environments/environment';
 
@@ -237,12 +236,7 @@ export class BaseService<A> {
    * @param {string} title
    * @param {string} body
    */
-  showSuccessToast(title: string, body?: string) {
-    const toast: Partial<IndividualConfig> = {
-      enableHtml: true
-    };
-    this._commonService.toastrService.success(body, title, toast);
-  }
+
 
   /**
    * display the toast error message based on information in ApiError.
@@ -270,12 +264,20 @@ export class BaseService<A> {
    * @param {string} title
    * @param {string} body
    */
-  showErrorToast(title: string, body?: string) {
-    const toast: Partial<IndividualConfig> = {
-      enableHtml: true
-    };
-    this._commonService.toastrService.error(body, title, toast);
+showSuccessToast(title: string, body?: string) {
+  if (body) {
+    this._commonService.toastrService.successToast(body, title);
+  } else {
+    this._commonService.toastrService.successToast(title);
   }
+}
 
+showErrorToast(title: string, body?: string) {
+  if (body) {
+    this._commonService.toastrService.errorToast(body, title);
+  } else {
+    this._commonService.toastrService.errorToast(title);
+  }
+}
   //#endregion
 }

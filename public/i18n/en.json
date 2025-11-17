@@ -12,7 +12,7 @@
     "SIDE_BAR_DASHBOARD": "Dashboard",
     "SIDE_BAR_ADMIN": "Admin",
     "SIDE_BAR_MAIL_SETTING": "Mail Setting",
-    "WELCOME_MSG": "Welcome to Angular 17 Angular Template!!",
+    "WELCOME_MSG": "Welcome to Angular 20 Angular Template!!",
     "INSTRUCTION_ON_HOW_TO_RESET_YOUR_PASSWORD_AND_SENT_TO_ASSOCIATED_EMAIL": "An email with instructions on how to reset your password has been sent to the email address associated with provided username.",
     "CHECK_EMAIL_FOLLOW_INSTRUCTIONS_TO_RESET_PWD": "Please check your email and follow the instructions in order to reset your password.",
     "email": "Email",
