@@ -2,17 +2,17 @@ import { HttpClient, HttpErrorResponse } from '@angular/common/http';
 import { Injectable, inject } from '@angular/core';
 import { ApiCreatedResponse, ApiError, ApiOkResponse } from '../models/api-response';
 import { Observable, catchError, throwError } from 'rxjs';
-import { ToastrService } from 'ngx-toastr';
 import { TranslateService } from '@ngx-translate/core';
 import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 import { UserPermissionService } from './user-permission.service';
+import { ToastService } from './toast.service';
 
 @Injectable({
   providedIn: 'root'
 })
 export class CommonService {
 
-  public toastrService = inject(ToastrService);
+  public toastrService = inject(ToastService);
   public translateService = inject(TranslateService);
   public http = inject(HttpClient);
   public modalService = inject(NgbModal);
